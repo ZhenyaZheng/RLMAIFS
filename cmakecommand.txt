@@ -1,0 +1,12 @@
+windows：
+mkdir build
+cd build
+cmake ..  -DCMAKE_INSTALL_PREFIX="./" -DUSE_MPICH=ON -D_LIGHTGBM_INCLUDE_DIRS="dep/LightGBM/build/include/" -D_LIGHTGBM_LIBRARIES="dep/LightGBM/build/lib"
+Build in VS
+linux:
+mkdir build && cd build
+Release:
+cmake .. -DCMAKE_INSTALL_PREFIX=./ -DUSE_MPICH=ON -D_LIGHTGBM_INCLUDE_DIRS="dep/LightGBM/build/include/" -D_LIGHTGBM_LIBRARIES="dep/LightGBM/build/lib"
+Debug:
+cmake .. -DCMAKE_INSTALL_PREFIX=./ -DUSE_MPICH=ON -D_LIGHTGBM_INCLUDE_DIRS="dep/LightGBM/Debug/include/" -D_LIGHTGBM_LIBRARIES="dep/LightGBM/Debug/lib/" -DCMAKE_BUILD_TYPE=Debug
+make install -j8

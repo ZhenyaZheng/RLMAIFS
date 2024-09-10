@@ -1,0 +1,47 @@
+{
+  "rootpath": "../",
+  "datasetpath": "data/dataset/processed/yeastN_train.csv",
+  "savepath": "data/dataset/afterfs/",
+  "classname": "label",
+  "datasetname": "yeast",
+  "distributednodes": 1,
+  "datefeaturename": [],
+  "discretefeaturename": [],
+  "loggerpath": "logs/rlmaifs/yeast.log",
+  "numtempdatasets": 1,
+  "testdatapath": "data/dataset/processed/yeastN_test.csv",
+  "valdatapath": "data/dataset/processed/yeastN_val.csv",
+  "threadnum": 10,
+  "wethreadnum":10,
+  "targetclasses": 2,
+  "maxnumsfeatures": 2,
+  "datasettype": 0,
+  "loggerlevel": 8,
+  "missval": "",
+  "featurenum": 8,
+  "lightgbmparams": {
+    "boosting_type": "gbdt",
+    "num_leaves": "16",
+    "learning_rate": "0.1",
+    "verbosity": "-1",
+    "num_iterations": "100",
+    "important_type": "1",
+    "seed": "1",
+    "deterministic": "true",
+    "num_threads": "10"
+  },
+  "targetclassindex": -1,
+  "params":{
+    "gamma": "0.5",
+    "alpha": "0.1",
+    "epsilon": "0.9",
+    "n_search_iterations": "20",
+    "state": "",
+    "maxIterParticle": "50",
+    "n_individuals": "20",
+    "feature_size": "0",
+    "earlystopround": "10",
+    "earlystopiterations": "3"
+  }
+}
+
